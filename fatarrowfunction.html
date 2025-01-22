@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fat arroe function</title>
+</head>
+<body>
+    
+
+    <script>
+        //US President Donald Trump has said he is considering imposing a 10% tariff on imports of Chinese-made goods as soon as 1 February.
+        let arr = ["US","President"];
+        let arr1 = [...arr,"Donald","Trump"];
+        let arr2 = [...arr1,"has","siad"]
+        // console.log(arr2);
+        var para = '';
+        for(var i=0; i<arr2.length; i++){
+            console.log(arr2[i]);
+            para = para + arr2[i] + " ";
+        }
+        console.log(para);
+        var para2 = "";
+        let arr3 = [...arr2,"he","is","considering"];
+        let arr4 = [...arr3,"imposing"];
+        for(var j=0; j<arr4.length; j++){
+            console.log(arr4[j]);
+            para2 = para2+arr4[j]+" ";
+        }
+        console.log(para2);
+
+        let arr5 = [...arr4,"a 10%"];
+        let arr6 = [...arr5,"traiff on import"];
+
+        console.log(arr6.length);
+        
+        var para3 = "";
+        for(var k=0; k<arr6.length; k++){
+            para3 = para3 + arr6[k] + " ";
+        }
+        console.log(para3);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

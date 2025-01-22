@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in Javascript</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        //create a object 
+        let family = {
+            grandParent: [
+                grandFather = {
+                    name: "Ram lal",
+                    contact: "8252525210"
+                },
+                grandMother = {
+                    name: "shardha devi",
+                    contact: "7582415217"
+                }
+            ]
+
+        }
+        for (var i=0; i<family.grandParent.length; i++){
+            console.log(i);
+            console.log(family.grandParent[i].name + " " + family.grandParent[i].contact);
+        }
+        // console.log(family.grandParent[0].name);
+    </script>
+</body>
+
+</html>
