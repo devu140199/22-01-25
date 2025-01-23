@@ -13,7 +13,7 @@
 
     <script>
         //create a object 
-        let family = {
+      /*  let family = {
             grandParent: [
                 grandFather = {
                     name: "Ram lal",
@@ -27,10 +27,46 @@
 
         }
         for (var i=0; i<family.grandParent.length; i++){
-            console.log(i);
+            // console.log(i);
             console.log(family.grandParent[i].name + " " + family.grandParent[i].contact);
+        } */
+
+        let familyTree = {
+            parent1 : ["father", "mother", "doughter"],
+            parent2 : ["father2", "mother2", "son2"],
+            parent1Details : {
+                father : {
+                    name : "prem",
+                    contact : "8545285152"
+                },
+                mother : { 
+                    name : "mamta",
+                    contact : "8545285789"
+                },
+                childrenDetails : {
+                    childname1 : "karti",
+                    childname2 : "arati",
+                    childname3 : "bhalu"
+                }
+            },
+            parent2Details : {
+                father : {
+                    name : "parmod",
+                    contact : "6252425128"
+                },
+                mother : {
+                    name : "reema",
+                    contact : "6254218757"
+                },
+                childrenDetails : {
+                    childname1 : "mogli"
+                }
+            }
         }
-        // console.log(family.grandParent[0].name);
+        // console.log(familyTree.parent2Details.childrenDetails.childname1);
+        console.log("My family have 3 branch 1. "+ familyTree.parent1Details.father.name +" and "+ familyTree.parent1Details.mother.name +" and 3 children "+ familyTree.parent1Details.childrenDetails.childname1 +", "+ familyTree.parent1Details.childrenDetails.childname2 +" and "+ familyTree.parent1Details.childrenDetails.childname3 +" . 2. "+ familyTree.parent2Details.father.name+" and "+ familyTree.parent2Details.mother.name +" and 1 children "+ familyTree.parent2Details.childrenDetails.childname1 +"")
+
+
     </script>
 </body>
 
